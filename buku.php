@@ -23,6 +23,7 @@
             <td>Nama</td>
             <td>ISBN</td>
             <td>Unit</td>
+            <td>ACTION</td>
         </tr>
 
         <?php foreach ($query as $buku) { ?>
@@ -30,6 +31,7 @@
                 <td><?php echo $buku["nama"] ?></td>
                 <td><?php echo $buku["isbn"] ?></td>
                 <td><?php echo $buku["unit"] ?></td>
+                <td><a href=<?php echo "edit-buku.php?id=" . $buku["id"] ?>>EDIT</a></td>
             </tr>
         <?php } ?>
     </table>
