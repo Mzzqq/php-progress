@@ -30,5 +30,9 @@ $query = mysqli_query($db, "SELECT * FROM staff");
         </tr>
     <?php } ?>
 </table>
+
+<br>
+<a href="./index.php">Kembali ke halaman utama</a>
+
 </body>
 </html>
