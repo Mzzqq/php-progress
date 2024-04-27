@@ -20,6 +20,7 @@ $query = mysqli_query($db, "SELECT * FROM staff");
         <td>Nama</td>
         <td>Telepon</td>
         <td>Email</td>
+        <td>ACTION</td>
     </tr>
 
     <?php foreach ($query as $staff) { ?>
@@ -27,6 +28,7 @@ $query = mysqli_query($db, "SELECT * FROM staff");
             <td><?php echo $staff["nama"] ?></td>
             <td><?php echo $staff["telp"] ?></td>
             <td><?php echo $staff["email"] ?></td>
+            <td><a href=<?php echo "edit-staff.php?id=" . $staff["id"] ?>>EDIT</a></td>
         </tr>
     <?php } ?>
 </table>
