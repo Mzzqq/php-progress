@@ -6,7 +6,7 @@ if (isset($_POST["submit"])) {
     $telp = $_POST["telp"];
     $email = $_POST["email"];
 
-    $query = mysqli_query($db, "INSERT INTO buku VALUES (NULL, '$nama', '$telp', '$email')");
+    $query = mysqli_query($db, "INSERT INTO staff VALUES (NULL, '$nama', '$telp', '$email')");
 }
 
 
