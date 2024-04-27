@@ -29,6 +29,6 @@ $query = mysqli_query($db, "SELECT * FROM staff");
             <td><?php echo $staff["email"] ?></td>
         </tr>
     <?php } ?>
-
+</table>
 </body>
 </html>
