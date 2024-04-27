@@ -31,6 +31,8 @@ $query = mysqli_query($db, "SELECT * FROM staff");
     <?php } ?>
 </table>
 
+<br></br>
+<a href="./tambah-staff.php">Tambah data staff</a>
 <br>
 <a href="./index.php">Kembali ke halaman utama</a>
 
