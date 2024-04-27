@@ -1,3 +1,17 @@
+<?php
+    include_once("./connect.php");
+
+    if (isset($_POST["submit"])) {
+        $nama = $_POST["nama"];
+        $isbn = $_POST["isbn"];
+        $unit = $_POST["unit"];
+
+        $query = mysqli_query($db, "INSERT INTO buku VALUES (NULL, '$nama', '$isbn', $unit)");
+    }
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,7 +37,7 @@
 
         <br>
         <br>
-        <button type="submit" name="submi">SUBMIT</button>
+        <button type="submit" name="submit">SUBMIT</button>
     </form>
 </body>
 </html>
