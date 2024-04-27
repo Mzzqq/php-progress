@@ -8,6 +8,9 @@
     <title>Praktikum Pertemuan 9</title>
 </head>
 <body>
-<h1>Aplikasi Perpustakaan</h1>
+    <h1>Aplikasi Perpustakaan</h1>
+    <a href="./buku.php">Lihat daftar buku</a>
+    <br>
+    <a href="./staff.php">Lihat daftar staff</a>
 </body>
 </html>
