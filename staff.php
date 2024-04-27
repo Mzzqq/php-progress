@@ -1,3 +1,9 @@
+<?php
+include_once("./connect.php");
+
+$query = mysqli_query($db, "SELECT * FROM staff");
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,5 +15,20 @@
 </head>
 <body>
 <h1>Daftar staff</h1>
+<table border="1">
+    <tr>
+        <td>Nama</td>
+        <td>Telepon</td>
+        <td>Email</td>
+    </tr>
+
+    <?php foreach ($query as $staff) { ?>
+        <tr>
+            <td><?php echo $staff["nama"] ?></td>
+            <td><?php echo $staff["telp"] ?></td>
+            <td><?php echo $staff["email"] ?></td>
+        </tr>
+    <?php } ?>
+
 </body>
 </html>
