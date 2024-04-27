@@ -31,7 +31,10 @@
                 <td><?php echo $buku["nama"] ?></td>
                 <td><?php echo $buku["isbn"] ?></td>
                 <td><?php echo $buku["unit"] ?></td>
-                <td><a href=<?php echo "edit-buku.php?id=" . $buku["id"] ?>>EDIT</a></td>
+                <td>
+                    <a href=<?php echo "edit-buku.php?id=" . $buku["id"] ?>>EDIT</a> |
+                    <a href=<?php echo "delete-buku.php?id=" . $buku["id"] ?>>HAPUS</a>
+                </td>
             </tr>
         <?php } ?>
     </table>
