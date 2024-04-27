@@ -18,8 +18,20 @@
 <body>
     <h1>Daftar buku</h1>
 
-    <?php foreach ($query as $data) { ?>
-        <?php echo $data["nama"] ?>
-    <?php } ?>
+    <table border="1">
+        <tr>
+            <td>Nama</td>
+            <td>ISBN</td>
+            <td>Unit</td>
+        </tr>
+
+        <?php foreach ($query as $buku) { ?>
+            <tr>
+                <td><?php echo $buku["nama"] ?></td>
+                <td><?php echo $buku["isbn"] ?></td>
+                <td><?php echo $buku["unit"] ?></td>
+            </tr>
+        <?php } ?>
+    </table>
 </body>
 </html>
