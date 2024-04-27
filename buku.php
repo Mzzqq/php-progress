@@ -34,6 +34,8 @@
         <?php } ?>
     </table>
 
+    <br></br>
+    <a href="./tambah-buku.php">Tambah data buku</a>
     <br>
     <a href="./index.php">Kembali ke halaman utama</a>
 </body>
