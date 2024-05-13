@@ -6,10 +6,10 @@
         <input type="email" id="email" name="email"><br>
 
         <label for="password">Password: </label><br>
-        <input type="passowrd" id="password" name="password"><br>
+        <input type="password" id="password" name="password"><br>
 
         <br>
-        <button type="submit" value="register"></button>
+        <button type="submit" value="register">REGISTER</button>
     </form>
 </body>
 </html>
