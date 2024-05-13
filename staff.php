@@ -28,7 +28,10 @@ $query = mysqli_query($db, "SELECT * FROM staff");
             <td><?php echo $staff["nama"] ?></td>
             <td><?php echo $staff["telp"] ?></td>
             <td><?php echo $staff["email"] ?></td>
-            <td><a href=<?php echo "edit-staff.php?id=" . $staff["id"] ?>>EDIT</a></td>
+            <td>
+                <a href=<?php echo "edit-staff.php?id=" . $staff["id"] ?>>EDIT</a> |
+                <a href=<?php echo "delete-staff.php?id=" . $staff["id"] ?>>HAPUS</a>
+            </td>
         </tr>
     <?php } ?>
 </table>
