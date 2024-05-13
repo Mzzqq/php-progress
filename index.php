@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if (!isset($_SESSION['email'])) {
+        header('location: login.php');
+        exit();
+    }
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,3 +21,4 @@
     <a href="./staff.php">Lihat daftar staff</a>
 </body>
 </html>
+<?php session_destroy(); ?>
