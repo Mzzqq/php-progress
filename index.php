@@ -19,6 +19,9 @@
     <a href="./buku.php">Lihat daftar buku</a>
     <br>
     <a href="./staff.php">Lihat daftar staff</a>
+    <br>
+    <form action="logout_process.php" method="POST">
+    <button type="submit">LOGOUT</button>
+    </form>
 </body>
 </html>
-<?php session_destroy(); ?>
